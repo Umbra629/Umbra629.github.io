@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Altas - Instituto Tecnológico de Matamoros</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <h1>INSTITUTO TECNOLÓGICO DE MATAMOROS</h1>
+    </header>
+    <!-- Navegación -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index2.php">Inicio</a></li>
+            <li><a href="Altas2.html">Altas</a></li>
+            <li><a href="modificar_registro.php">Modificar</a></li>
+            <li><a href="lista2.php">Mostrar Lista</a></li>
+            <li><a href="eliminar_1.php">Eliminar</a></li>
+        </ul>
+    </nav>
+    <!-- Formulario -->
+    <main class="form-container">
+        <form action="guardar_datos2.php" method="post" id="form1" onsubmit="return validarFormulario();">
+            <h2>Ingresar Datos del Visitante</h2>
+            <label for="paterno">Apellido Paterno:</label>
+            <input type="text" id="paterno" name="fpaterno" placeholder="Escriba apellido paterno" required>
+            <label for="materno">Apellido Materno:</label>
+            <input type="text" id="materno" name="fmaterno" placeholder="Escriba apellido materno" required>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="fnombre" placeholder="Escriba nombre" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="ftelefono" placeholder="Escriba el teléfono" pattern="[0-9]{10}" title="Debe tener 10 dígitos" required>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="fciudad" placeholder="Escriba la ciudad" required> 
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fnacio" required>
+            <div class="button-group">
+                <button type="submit" class="btn-primary">Guardar Datos</button>
+                <button type="reset" class="btn-secondary">Limpiar</button>
+            </div>
+        </form>
+    </main>
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <p>&copy; 2024 Instituto Tecnológico de Matamoros</p>
+    </footer>
+</body>
+</html>
+
